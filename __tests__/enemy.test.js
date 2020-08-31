@@ -48,5 +48,9 @@ describe('enemy', () => {
       const attackLine = `${enemy.name} lets out a ${enemy.dialogue}, and hits ${victim.name} for ${enemy.attackTotal} damage!`;
       expect(enemy.attack(victim)).toBe(attackLine);
     });
+    it('can\'t attack if dead', () => {
+      enemy.health = -1;
+      expect(() => enemy.attack(victim)).toThrow('The enemy is dead');
+    });
   });
 });

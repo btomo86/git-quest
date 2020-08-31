@@ -21,6 +21,9 @@ Enemy.prototype._describeAttack = function (target) {
 };
 
 Enemy.prototype.attack = function (target) {
+
+  if(this.health < 0) throw new Error('The enemy is dead');
+
   target._takeDamage(this.attackTotal);
   return this._describeAttack(target);
 };
