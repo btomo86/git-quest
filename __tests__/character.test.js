@@ -36,7 +36,6 @@ describe('character', () => {
     });
     it('has a base defense', () => {
       expect(character.baseDefense).toEqual(0);
-      //hi ben
     });
   });
 
