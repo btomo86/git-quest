@@ -4,6 +4,8 @@ const Character = require('./character');
 function Player(config) {
   Character.call(this, config);
   this.equippedWeapon = null;
+  this.nextLevel = 1000;
+  this.currentExperience = 0;
 }
 
 Player.prototype = Object.create(Character.prototype);
