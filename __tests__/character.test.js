@@ -28,6 +28,15 @@ describe('character', () => {
     it('has dialogue', () => {
       expect(character.dialogue).toBe(config.dialogue);
     });
+    it('has level', () => {
+      expect(character.level).toBe(1);
+    });
+    it('has base attack', () => {
+      expect(character.baseAttack).toBe(0);
+    });
+    it('has base defense', () => {
+      expect(character.baseDefense).toBe(0);
+    });
   });
   describe('speak', () => {
     it('returns its dialogue', () => {
