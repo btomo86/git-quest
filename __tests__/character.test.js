@@ -31,6 +31,12 @@ describe('character', () => {
     it('has a start level', () => {
       expect(character.level).toEqual(1);
     });
+    it('has a base attack', () => {
+      expect(character.baseAttack).toEqual(0);
+    });
+    it('has a base defense', () => {
+      expect(character.baseDefense).toEqual(0);
+    });
   });
 
   describe('speak', () => {

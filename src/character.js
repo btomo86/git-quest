@@ -5,6 +5,8 @@ function Character(config) {
   this.maxHealth = config.maxHealth;
   this.dialogue = config.dialogue;
   this.level = 1;
+  this.baseAttack = 0;
+  this.baseDefense = 0;
 }
 
 Character.prototype = {
