@@ -28,7 +28,11 @@ describe('character', () => {
     it('has dialogue', () => {
       expect(character.dialogue).toBe(config.dialogue);
     });
+    it('has a start level', () => {
+      expect(character.level).toEqual(1);
+    });
   });
+
   describe('speak', () => {
     it('returns its dialogue', () => {
       expect(character.speak()).toBe(config.dialogue);
