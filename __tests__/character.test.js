@@ -37,6 +37,12 @@ describe('character', () => {
     it('has base defense', () => {
       expect(character.baseDefense).toBe(0);
     });
+    it('it has attack total', () => {
+      expect(character.attackTotal).toBe(1);
+    });
+    it('it has defence total', () => {
+      expect(character.defenseTotal).toBe(1);
+    });
   });
   describe('speak', () => {
     it('returns its dialogue', () => {
@@ -51,6 +57,7 @@ describe('character', () => {
       character.health = 0;
       expect(character.isAlive).toBe(false);
     });
+
   });
   describe('take damage', () => {
     it('can take damage', () => {
