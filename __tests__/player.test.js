@@ -37,6 +37,10 @@ describe('constructor function', () => {
     expect(player.maxHealth).toBe(config.maxHealth);
     expect(player.dialogue).toBe(config.dialogue);
   });
+  it('has experience metrics defined', () => {
+    expect(player.nextLevel).toBe(1000);
+    expect(player.currentExperience).toBe(0);
+  })
   it('has a weapon slot', () => {
     expect(player).toHaveProperty('equippedWeapon');
   });
