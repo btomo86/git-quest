@@ -26,5 +26,8 @@ Player.prototype.attack = function (target) {
   target._takeDamage(this.equippedWeapon.damage);
   return this._describeAttack(target);
 };
+Player.prototype.levelUp = function(){
+  this.level ++
+}
 
 module.exports = Player;
