@@ -19,6 +19,12 @@ Character.prototype = {
       this.health = 0;
     }
   },
+  get attackTotal() {
+    return this.baseAttack + this.level;
+  },
+  get defenseTotal() {
+    return this.baseDefense + this.level;
+  },
   _heal: function (health) {
     this.health += health;
     if (this.health > this.maxHealth) {
