@@ -35,6 +35,9 @@ describe('enemy', () => {
     it('has a damage rating based on attackTotal', () => {
       expect(enemy.attackTotal).toBe(1);
     });
+    it('has experienceReward total to be 100', () => {
+      expect(enemy.experienceReward).toBe(100);
+    });
   });
   describe('attack', () => {
     it('can attack a target', () => {
